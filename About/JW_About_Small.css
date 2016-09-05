@@ -1,3 +1,4 @@
+
 head,body
 {
 	width: 100%;
@@ -7,16 +8,15 @@ head,body
 }
 .top
 {
-	position: relative;
 	width: 100%;
 	margin:0 auto;
 	padding:0;
-	background: url(../assets/Exp_Image.jpg) center no-repeat;
+	background: url(../assets/Bio_Picture_Small.jpg) 0% 100% no-repeat;
 	background-size: cover;
+	position: relative;
 	overflow: auto;
-	max-width: 1850px;
-	height: 475px;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	min-height: 475px;
+	
 }
 .topHead
 {
@@ -25,9 +25,7 @@ head,body
 	padding:0;
 	width: 85%;
 	margin-top: 0px;
-	max-width: 1650px;
 	height: 100px;
-
 }
 
 .logo
@@ -42,26 +40,63 @@ head,body
 	max-width:100%;
 	max-height:100%;
 }
-.links
-{
-    height: 90%;
-	width: 40%;
-	margin:0;
-	padding:0;
-	text-align: left;
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
+
+.links {
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  top: 0;
+  height: 100%;
+  min-height: 175px;
+  width: 100%;
+  max-width: 150px;
+  background-color: rgba(115,123,128,0.7);
+  box-sizing: border-box;
+  padding: 0px;
+  color: white;
+  margin-right: -150px;
+  transition: margin 200ms ease-in-out;
+}
+
+.links.nav-open {
+  margin-right: 0;
+  margin-top: 0;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: rgba(115,123,128,.9);
+}
+
+.nav-menu {
+  position: absolute;
+  left: -40px;
+  top: 0px;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.nav-menu:before {
+  content: "\2630";
+  font-weight: 600;
+  font-size: 1.25em;
+  line-height: 40px;
+  transition: content 1s;
+}
+
+.links.nav-open .nav-menu:before {
+  content: "\2613";
+  font-size: 1.25em;
 }
 .nav-links {
+  margin: 30% 0;
   font-family: 'Titillium Web', sans-serif;
-  text-align: right;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
   text-decoration: none;
-  width: 350px;
-  float: right;
+  width: 100%;
+  text-align: center;
 }
 
 .nav-links * {
@@ -73,12 +108,11 @@ head,body
 
 .nav-links a {
   padding: 0.2em 0.8em;
-  margin: 0.2em 0;
-  display: inline;
+  margin-bottom: 30px;
+  display: inline-block;
   color: white;
   position: relative;
   text-decoration: none;
-  margin-left: 20px;
   font-weight: bold;
 }
 
@@ -111,11 +145,6 @@ head,body
   transform: translate(-100%, -50%);
 }
 
-.nav-links a:hover,
-.nav-links a.active{
-  color: white;
-}
-
 .nav-links a.active{
   font-weight: bold;
 }
@@ -127,47 +156,37 @@ head,body
   transform: translate(0%, 0%);
   opacity: 1;
 }
-.nav-menu
+.wrapper
 {
-    display: none;
+	width:100%;
+    margin: 0 auto;
 }
-.pageHeader
+.skillBar
 {
-	margin-top: 10px;
-	height: 80px;
-	background-color: #660000;
-	margin-right: 10%;
-	margin-left: 10%;
-	z-index: 1;
-	position: relative;
+	height: 3px;
+	width: 100%;
+	background-color: #4d4d4d;
 }
-#expText
+
+
+#aboutText
 {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 40%;
-	min-width: 450px;
-	text-align: left;
-	padding-right: 4%;
-	padding-left: 25px;
-	padding-top: 25px;
-  	padding-bottom: 25px;
-	font-size: 1.0rem;
-	overflow: auto;
+	width: 70%;
+    float: right;
+	margin: 25px 0;
+	padding: 5% 5%;
 	background-color: rgba(102,0,0,0.7);
 }
-#quote
+#blurb
 {
-	display: block;
-	margin: 0 auto;
+	display: inline-block;
 	text-align: left;
-	font-size: .75em;
+	font-size: .6em;
 	padding-top: 0;
 	padding-bottom: 0;
-	max-width: 450px;
 }
-#quote h1
+
+#blurb h1
 {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -176,105 +195,81 @@ head,body
 	color: white;
 }
 
-body
-{
-	width: 100%;
-}
-
-.wrapper
-{
-	width:100%;
-	max-width: 1450px;
-	margin: 0% auto;
-}
-hr
-{
-	width: 66.6%;
-	border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(115,15,21, 0.75), rgba(0, 0, 0, 0));
-}
-#expTopper
-{
-	display: block;
-	text-align: center;
-	font-size: 3.5em;
-}
-
-h1, h2, h3
-{
-	display: inline;
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 300;
-	color: #660000;
-}
-h1
-{
-	font-weight: 700;
-}
-
-li 
-{
-	font-family: 'Raleway', sans-serif;
-	line-height: 1.45;
-	font-weight: 300;
-	color: #4d4d4d;
-	margin-left: 0%;
-	padding-left: 10%;
-	padding-right: 10%;
-	margin-top: 20px;
-	list-style: none;
-}
-.bar
-{
-    width: 100%;
-    height: 3px;
-    background-color: black;
-}
-#experience
+#section2
 {
 	margin: 2% auto;
 	width: 100%;
 }
 
-#section1, #section2
+#section2 h1
 {
-	position: relative;
-	width: 100%;
-	padding: 0%;
 	text-align: center;
-	margin: 4em 0;
+	font-size: 3.5em;
 }
-#job1, #job2
+.skills
 {
-	width: 90%;
 	position: relative;
-	margin: 2em auto;
-	display: block;
-	text-align: center;
-	max-width: 600px;
+	margin: 100px auto;
+	width: 95%;
+
+}
+.skills h2, #section2 h1
+{
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 700;
+	color: #660000;
+    text-align: center;
+}
+.skills p
+{
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.45;
+	font-weight: 300;
+	color: #4d4d4d;
+    text-align: center;
+}
+.skillpic
+{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	background-color: #660000;
+    margin: 0 auto;
+}
+#devpic
+{
+	background: url(../assets/code_skill.jpg) center no-repeat;
+	background-size: 100%;
+}
+#datapic
+{
+	background: url(../assets/data_skill.jpg) center no-repeat;
+	background-size: 100%;
+}
+#SFpic
+{
+	background: url(../assets/SF_skill.jpg) center no-repeat;
+	background-size: 100%;
 }
 
-#job1_image, #job2_image
+.skillinfo
 {
-	width: 95%;
-	margin: 0 auto;
-    position: relative;
-	display: block;
-	text-align:center;
+    width: 90%;
+	top: 10%;
+	right: 0;
+    margin: 0 auto;
 }
-#job1_image img, #job2_image img
-{
-	width: 100%;
-	max-width: 600px;
-}
+#datapic
+	{right: 0;}
+#datainfo
+	{left: 0;}
 
 footer 
 {
 	margin: 0 auto;
 	margin-top: 50px;
     width: 100%;
-	max-width: 1850px;
 	height: 175px;
     position: relative;
 	background-color: #737B80;
@@ -325,4 +320,5 @@ footer
 {
 	transition: box-shadow .3s ease-in-out;
 	box-shadow: 0 0 0 5px #660000;
+	
 }

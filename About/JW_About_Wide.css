@@ -1,3 +1,4 @@
+
 head,body
 {
 	width: 100%;
@@ -7,11 +8,10 @@ head,body
 }
 .top
 {
-	position: relative;
 	width: 100%;
 	margin:0 auto;
 	padding:0;
-	background: url(../assets/Exp_Image.jpg) center no-repeat;
+	background: url(../assets/Bio_Picture.jpg) center no-repeat;
 	background-size: cover;
 	overflow: auto;
 	max-width: 1850px;
@@ -27,7 +27,6 @@ head,body
 	margin-top: 0px;
 	max-width: 1650px;
 	height: 100px;
-
 }
 
 .logo
@@ -131,43 +130,62 @@ head,body
 {
     display: none;
 }
-.pageHeader
+
+.navIcons
 {
-	margin-top: 10px;
-	height: 80px;
-	background-color: #660000;
-	margin-right: 10%;
-	margin-left: 10%;
-	z-index: 1;
-	position: relative;
+	display: none;
 }
-#expText
+
+.navIcons a
 {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+    width: 40px;
+}
+
+.icons
+{
+    height: 25px;
+    width: 25px;
+    display:inline-block;
+    background-color: #4d4d4d;
+    margin-left: 8px;
+}
+.icons:hover
+{
+	transition: background .4s;
+	background-color: #c5c5c5;
+}
+
+.wrapper
+{
+	width:100%;
+    margin: 0 auto;
+}
+
+#aboutText
+{
 	width: 40%;
 	min-width: 450px;
 	text-align: left;
+	display: block;
 	padding-right: 4%;
 	padding-left: 25px;
 	padding-top: 25px;
   	padding-bottom: 25px;
 	font-size: 1.0rem;
+	float: right;
 	overflow: auto;
 	background-color: rgba(102,0,0,0.7);
 }
-#quote
+#blurb
 {
-	display: block;
-	margin: 0 auto;
+	display: inline-block;
 	text-align: left;
 	font-size: .75em;
 	padding-top: 0;
 	padding-bottom: 0;
 	max-width: 450px;
 }
-#quote h1
+#blurb h1
 {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -176,98 +194,76 @@ head,body
 	color: white;
 }
 
-body
-{
-	width: 100%;
-}
-
-.wrapper
-{
-	width:100%;
-	max-width: 1450px;
-	margin: 0% auto;
-}
-hr
-{
-	width: 66.6%;
-	border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(115,15,21, 0.75), rgba(0, 0, 0, 0));
-}
-#expTopper
-{
-	display: block;
-	text-align: center;
-	font-size: 3.5em;
-}
-
-h1, h2, h3
-{
-	display: inline;
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 300;
-	color: #660000;
-}
-h1
-{
-	font-weight: 700;
-}
-
-li 
-{
-	font-family: 'Raleway', sans-serif;
-	line-height: 1.45;
-	font-weight: 300;
-	color: #4d4d4d;
-	margin-left: 0%;
-	padding-left: 10%;
-	padding-right: 10%;
-	margin-top: 20px;
-	list-style: none;
-}
-.bar
-{
-    width: 100%;
-    height: 3px;
-    background-color: black;
-}
-#experience
+#section2
 {
 	margin: 2% auto;
 	width: 100%;
 }
 
-#section1, #section2
+#section2 h1
 {
-	position: relative;
-	width: 100%;
-	padding: 0%;
 	text-align: center;
-	margin: 4em 0;
+	font-size: 3.5em;
 }
-#job1, #job2
+.skills
 {
-	width: 90%;
 	position: relative;
-	margin: 2em auto;
 	display: block;
-	text-align: center;
-	max-width: 600px;
+	margin: 100px auto;
+	width: 95%;
+	height: 233px;
+	max-width: 700px;
+}
+.skills h2, #section2 h1
+{
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 700;
+	color: #660000;
+}
+.skills p
+{
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.45;
+	font-weight: 300;
+	color: #4d4d4d;
+}
+.skillpic
+{
+	position: absolute;
+	display: inline-block;
+	width: 33.3%;
+	height: 100%;
+	border-radius: 50%;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	background-color: #660000;
+}
+#devpic
+{
+	background: url(../assets/code_skill.jpg) center no-repeat;
+	background-size: 100%;
+}
+#datapic
+{
+	background: url(../assets/data_skill.jpg) center no-repeat;
+	background-size: 100%;
+}
+#SFpic
+{
+	background: url(../assets/SF_skill.jpg) center no-repeat;
+	background-size: 100%;
 }
 
-#job1_image, #job2_image
+.skillinfo
 {
-	width: 95%;
-	margin: 0 auto;
-    position: relative;
-	display: block;
-	text-align:center;
+	position: absolute;;
+	width: 60%;
+	top: 10%;
+	right: 0;
 }
-#job1_image img, #job2_image img
-{
-	width: 100%;
-	max-width: 600px;
-}
+#datapic
+	{right: 0;}
+#datainfo
+	{left: 0;}
 
 footer 
 {
@@ -325,4 +321,5 @@ footer
 {
 	transition: box-shadow .3s ease-in-out;
 	box-shadow: 0 0 0 5px #660000;
+	
 }
