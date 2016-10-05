@@ -11,7 +11,7 @@ head,body
 	width: 100%;
 	margin:0 auto;
 	padding:0;
-	background: url(../assets/Exp_Image.jpg) center no-repeat;
+	background: url(../Assets/Exp_Image.jpg) center no-repeat;
 	background-size: cover;
 	overflow: auto;
 	max-width: 1850px;
