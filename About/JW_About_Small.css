@@ -11,7 +11,7 @@ head,body
 	width: 100%;
 	margin:0 auto;
 	padding:0;
-	background: url(../assets/Bio_Picture_Small.jpg) 0% 100% no-repeat;
+	background: url(../Assets/Bio_Picture_Small.jpg) 0% 100% no-repeat;
 	background-size: cover;
 	position: relative;
 	overflow: auto;
@@ -239,17 +239,17 @@ head,body
 }
 #devpic
 {
-	background: url(../assets/code_skill.jpg) center no-repeat;
+	background: url(../Assets/Code_Skill.jpg) center no-repeat;
 	background-size: 100%;
 }
 #datapic
 {
-	background: url(../assets/data_skill.jpg) center no-repeat;
+	background: url(../Assets/Data_Skill.jpg) center no-repeat;
 	background-size: 100%;
 }
 #SFpic
 {
-	background: url(../assets/SF_skill.jpg) center no-repeat;
+	background: url(../Assets/SF_Skill.jpg) center no-repeat;
 	background-size: 100%;
 }
 
