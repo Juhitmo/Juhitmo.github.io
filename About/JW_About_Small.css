@@ -23,7 +23,7 @@ head,body
 	position: relative;
 	margin:auto;
 	padding:0;
-	width: 85%;
+	width: 98%;
 	margin-top: 0px;
 	height: 100px;
 }
@@ -148,9 +148,7 @@ head,body
 .nav-links a.active{
   font-weight: bold;
 }
-.nav-links a:hover:before,
 .nav-links a.active:before,
-.nav-links a:hover:after,
 .nav-links a.active:after {
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);

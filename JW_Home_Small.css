@@ -143,9 +143,7 @@ head,body
 .nav-links a.active{
   font-weight: bold;
 }
-.nav-links a:hover:before,
 .nav-links a.active:before,
-.nav-links a:hover:after,
 .nav-links a.active:after {
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
@@ -166,7 +164,7 @@ body
 #homeBox
 {
 	height: 100%;
-    min-height: 510px;
+  min-height: 320px;
 	width: 45%;
 	margin: 0;
 	padding: 0;
@@ -183,7 +181,7 @@ body
 {
 	width: 25%;
 	position: relative;
-	margin-left: 15px;
+	margin-left: 10px;
 	min-width: 100px;
 }
 .logo img
@@ -199,7 +197,7 @@ h1, h3
 }
 #dialog
 {
-    padding-top: 15%;
+  padding-top: 15%;
 	text-align: left;
 	margin: 0 auto;
 	color: white;
@@ -210,7 +208,7 @@ h1, h3
 }
 .emphasis
 {
-	color: #660000;
+	  color: #660000;
     font-weight: 700;
 }
 footer 
@@ -219,11 +217,11 @@ footer
 }
 #map
 {
-	margin: 6% auto;
-	width: 100%;
-    margin-left: 5%;
-	text-align: left;
-    position: relative;
+  margin: 6% auto;
+  width: 100%;
+  margin-left: 5%;
+  text-align: left;
+  position: relative;
 }
 #social_map
 {
