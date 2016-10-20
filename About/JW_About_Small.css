@@ -16,7 +16,7 @@ head,body
 	position: relative;
 	overflow: auto;
 	min-height: 475px;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	box-shadow: 0 10px 20px rgba(84,102,112,0.19), 0 6px 6px rgba(84,102,112,0.23);
 }
 .topHead
 {
@@ -62,7 +62,7 @@ head,body
   margin-right: 0;
   margin-top: 0;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  background-color: rgba(115,123,128,.9);
+  background-color: rgba(84,102,112,.9);
 }
 
 .nav-menu {
@@ -231,7 +231,7 @@ head,body
 	width: 250px;
 	height: 250px;
 	border-radius: 50%;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	box-shadow: 0 3px 6px rgba(84,102,112,0.16), 0 3px 6px rgba(84,102,112,0.23);
 	background-color: #660000;
     margin: 0 auto;
 }
@@ -270,7 +270,7 @@ footer
     width: 100%;
 	height: 175px;
     position: relative;
-	background-color: #737B80;
+	background-color: #54666f;
     bottom: 0;
 	-webkit-font-smoothing: antialiased;
 }
@@ -311,7 +311,7 @@ footer
 	width: 35px;
 	height: 35px;
 	margin: 0 15px;
-	background-color: #4d4d4d;
+	background-color: #54666f;
 	border-radius: 50%;
 }
 #social_map img:hover

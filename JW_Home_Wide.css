@@ -127,7 +127,7 @@ body
 	margin: 0;
 	padding: 0;
 	position: relative;
-	background-color: rgba(115,123,128,0.7);
+	background-color: rgba(84,102,112,0.7);
 	overflow: hidden;
 }
 #infoBox
@@ -192,7 +192,7 @@ footer
 	width: 35px;
 	height: 35px;
 	margin-right: 20px;
-	background-color: #4d4d4d;
+	background-color: #54666f; /*#4d4d4d*/
 	border-radius: 50%;
 }
 #social_map img:hover
