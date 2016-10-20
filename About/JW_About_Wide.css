@@ -16,7 +16,7 @@ head,body
 	overflow: auto;
 	max-width: 1850px;
 	height: 475px;
-	box-shadow: 0 10px 20px rgba(84,102,112,0.19), 0 6px 6px rgba(84,102,112,0.23);
+	box-shadow: 0 10px 20px rgba(84,102,112,0.3), 0 6px 6px rgba(84,102,112,0.4);
 }
 .topHead
 {
@@ -236,7 +236,7 @@ head,body
 	width: 33.3%;
 	height: 100%;
 	border-radius: 50%;
-	box-shadow: 0 3px 6px rgba(84,102,112,0.23), 0 3px 6px rgba(84,102,112,0.3);
+	box-shadow: 0 3px 6px rgba(84,102,112,0.5), 0 3px 6px rgba(84,102,112,0.65);
 	background-color: #660000;
 }
 #devpic
