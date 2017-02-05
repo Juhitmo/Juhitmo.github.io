@@ -16,7 +16,7 @@ head,body
 	overflow: auto;
 	max-width: 1850px;
 	height: 475px;
-	box-shadow: 0 10px 20px rgba(84,102,112,0.19), 0 6px 6px rgba(84,102,112,0.23);
+	box-shadow: 0 10px 20px rgba(84,102,112,0.3), 0 6px 6px rgba(84,102,112,0.4);
 }
 .topHead
 {
@@ -36,6 +36,7 @@ head,body
 	position: absolute;
 	margin-top: 10px;
 	top: 0;
+	/*cursor: pointer;*/
 }
 .logo img
 {
@@ -244,13 +245,13 @@ li
 	width: 100%;
 	padding: 0%;
 	text-align: center;
-	margin: 4em 0;
+	margin: 2em 0;
 }
 #job1, #job2
 {
 	width: 90%;
 	position: relative;
-	margin: 2em auto;
+	margin: 1em auto;
 	display: block;
 	text-align: center;
 	max-width: 600px;
@@ -267,7 +268,7 @@ li
 #job1_image img, #job2_image img
 {
 	width: 100%;
-	max-width: 600px;
+	max-width: 550px;
 }
 
 footer 
